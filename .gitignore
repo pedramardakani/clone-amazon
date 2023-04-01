@@ -12,7 +12,10 @@
 /build
 
 # virtual environment
-backend/.venv
+*#
+*~
+.venv
+__pycache__
 
 # misc
 .DS_Store

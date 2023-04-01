@@ -16,3 +16,15 @@ The FastAPI based RESTful API that takes care of amazon-like e-commerce website,
      $ source .venv/bin/activate
      (.venv) $ python3 -m pip install -r requirements.txt
    #+END_SRC
+
+3. Execute =uvicorn= to get the API up and running:
+
+   #+BEGIN_SRC console
+     $ uvicorn main:app --reload
+     INFO:     Will watch for changes in these directories: ['/YOUR-PATH-TO/clone-amazon/backend']
+     INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+     INFO:     Started reloader process [1069726] using WatchFiles
+     INFO:     Started server process [1069729]
+     INFO:     Waiting for application startup.
+     INFO:     Application startup complete.
+   #+END_SRC
