@@ -28,3 +28,23 @@ The FastAPI based RESTful API that takes care of amazon-like e-commerce website,
      INFO:     Waiting for application startup.
      INFO:     Application startup complete.
    #+END_SRC
+
+** Run unit tests
+
+   Simply use =pytest= to pass the tests.
+   Do not forget to use only =sync= code when adding to tests.
+   This allows for using =pytest= without complications rising from =async= and =await= structure.
+
+   #+BEGIN_SRC console
+     $ source .venv/bin/activate
+     (.venv)$ python3 -m pytest
+     ==================== test session starts ====================
+     platform linux -- Python 3.10.10, pytest-7.2.2, pluggy-1.0.0
+     rootdir: /YOUR-PATH-TO/clone-amazon/backend
+     plugins: anyio-3.6.2
+     collected 1 item
+
+     test_main.py .                                         [100%]
+
+     ===================== 1 passed in 0.16s =====================
+   #+END_SRC
