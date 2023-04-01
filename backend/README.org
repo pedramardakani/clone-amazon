@@ -1,0 +1,18 @@
+* The backend
+
+The FastAPI based RESTful API that takes care of amazon-like e-commerce website, "madagascar".
+
+** Get the backend running
+
+1. Create a virtual environment to keep things clean and tidy:
+
+   #+BEGIN_SRC console
+     $ python3 -m venv .venv
+   #+END_SRC
+
+2. Activate the virtual environment and install all the dependencies automatically inside:
+
+   #+BEGIN_SRC console
+     $ source .venv/bin/activate
+     (.venv) $ python3 -m pip install -r requirements.txt
+   #+END_SRC
