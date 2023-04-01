@@ -4,21 +4,16 @@
 """
 
 from fastapi import FastAPI
+from routers import products
 
-app = FastAPI(
-    title="Madagascar",
-    version="0.0.0",
-    description="An e-commerce website API similar to amazon, built on FastAPI, and ArangoDB.",
-    contact={
-        "name": "Pedram Ashofteh-Ardakani",
-        "email": "pedramardakani@pm.me",
-        "url": "https://pedramardakani.wordpress.com"
-    },
-    license_info={
-        "name": "GNU General Public License Version 3.0 or later",
-        "url": "https://www.gnu.org/licenses/"
-    }
-)
+# Custom scripts
+from config import settings
+
+# Main application and the metadata
+app = FastAPI(**settings.api_metadata)
+
+# Routers
+app.include_router(products.router)
 
 
 @app.get("/")
