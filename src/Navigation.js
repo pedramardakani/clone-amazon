@@ -1,58 +1,48 @@
 import React from "react";
-
+import "./Navigation.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 
 export default function Navigation() {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-light  navbar-design">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarTogglerDemo03"
-          aria-controls="navbarTogglerDemo03"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="nav-title">Madagascar</div>
+      <Navbar
+        className="navigation-design"
+        variant="dark"
+        expand="lg"
+        fixed="top"
+      >
+        <Container>
+          <Navbar.Brand className="brand-name" href="#home">
+            Madagascar
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto nav-links">
+              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link href="#cart">Cart</Nav.Link>
+              <Nav.Link href="#signin">Sign in</Nav.Link>
 
-        <div
-          class="collapse navbar-collapse justify-content-end navbar-items"
-          id="navbarTogglerDemo03"
-        >
-          <ul class="navbar-nav mt-2 mt-lg-0  ">
-            <li class="nav-item active">
-              <a class="nav-link" href="/">
-                Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/">
-                Cart
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="/">
-                Sign in
-              </a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0 d-flex">
-            <input
-              class="form-control mr-sm-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            ></input>
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-              Search
-            </button>
-          </form>
-        </div>
-      </nav>
+              <form class="form-inline my-2 my-lg-0 d-flex">
+                <input
+                  class="form-control mr-sm-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                ></input>
+                <button
+                  class="btn btn-outline-success my-2 my-sm-0"
+                  type="submit"
+                >
+                  Search
+                </button>
+              </form>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     </div>
   );
 }

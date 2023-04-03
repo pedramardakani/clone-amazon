@@ -1,0 +1,12 @@
+.navigation-design {
+  background-color: #131921;
+  color: white;
+}
+.brand-name {
+  margin-left: 40pxpx;
+}
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+}
