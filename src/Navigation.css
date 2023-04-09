@@ -3,10 +3,10 @@
   color: white;
 }
 .brand-name {
-  margin-left: 40pxpx;
-}
-.nav-links {
-  display: flex;
-  justify-content: flex-end;
+  margin-left: 40px;
   color: white;
+}
+.router-links {
+  height: 30px;
+  margin-top: 10px;
 }

@@ -1,6 +1,8 @@
 import "./App.css";
-import Products from "./Products";
+import { Route, Routes } from "react-router-dom";
+import Home from "./Home";
 import Navigation from "./Navigation";
+import Products from "./Products";
 import Signin from "./Signin";
 
 function App() {
@@ -8,8 +10,11 @@ function App() {
     <div className="App">
       <header className="header">
         <Navigation />
-        <Signin />
-        <Products />
+        <Routes>
+          <Route path="/Home" element={<Home />} />
+          <Route path="/Signin" element={<Signin />} />
+          <Route path="/Producs" element={<Products />} />
+        </Routes>
       </header>
       <footer></footer>
     </div>

@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
 import "./Navigation.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
@@ -7,6 +9,15 @@ import Navbar from "react-bootstrap/Navbar";
 import * as Icon from "react-feather";
 
 export default function Navigation() {
+  const NavUnlisted = styled.ul`
+    text-decoration: none;
+  `;
+  const linkStyle = {
+    margin: "1rem",
+    textDecoration: "none",
+    color: "white",
+  };
+
   return (
     <div>
       <Navbar
@@ -21,13 +32,20 @@ export default function Navigation() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto nav-links">
-              <Nav.Link className="active" href="#home">
-                Home
-              </Nav.Link>
-              <Nav.Link href="#cart">Cart</Nav.Link>
-              <Nav.Link href="#signin">Sign in</Nav.Link>
-
+            <Nav>
+              <div className="router-links">
+                <NavUnlisted>
+                  <Link to="/" style={linkStyle}>
+                    Home
+                  </Link>
+                  <Link to="/Cart" style={linkStyle}>
+                    Cart
+                  </Link>
+                  <Link to="/signin" style={linkStyle}>
+                    Sign in
+                  </Link>
+                </NavUnlisted>
+              </div>
               <form class="form-inline my-2 my-lg-0 d-flex">
                 <input
                   class="form-control mr-sm-2"
