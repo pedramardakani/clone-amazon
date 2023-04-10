@@ -46,15 +46,15 @@ export default function Navigation() {
                   </Link>
                 </NavUnlisted>
               </div>
-              <form class="form-inline my-2 my-lg-0 d-flex">
+              <form className="form-inline my-2 my-lg-0 d-flex">
                 <input
-                  class="form-control mr-sm-2"
+                  className="form-control mr-sm-2"
                   type="search"
                   aria-label="Search"
                   placeholder="search"
                 ></input>
                 <button
-                  class="btn btn-outline-success my-2 my-sm-0"
+                  className="btn btn-outline-success my-2 my-sm-0"
                   type="submit"
                 >
                   <Icon.Search />

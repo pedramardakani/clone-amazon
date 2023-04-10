@@ -1,0 +1,65 @@
+h1 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+input {
+  border-radius: 4px;
+}
+.signin {
+  text-align: center;
+  margin: 160px auto;
+  margin-bottom: 60px;
+  border: 1px solid;
+  max-width: 400px;
+}
+.signin-information {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.lables {
+  text-align: left;
+  margin-left: 70px;
+}
+.email-info {
+  margin-bottom: 20px;
+}
+.pass-info {
+  margin-bottom: 30px;
+}
+.submit {
+  width: 66%;
+  font-size: 15px;
+  background-color: #f1c55a;
+  border: 1px solid black;
+  border-radius: 4px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+.submit button .hover {
+  background-color: #3f2e0b;
+  opacity: 0.6;
+}
+
+hr {
+  max-width: 400px;
+  margin-left: 360px;
+}
+.new-account {
+  margin-left: 360px;
+}
+.new-account-text {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 13px;
+  opacity: 0.6;
+}
+.new-account-button {
+  width: 50%;
+  text-align: center;
+  font-size: 12px;
+  background-color: #e1e4ea;
+  border: 1px solid black;
+  border-radius: 4px;
+  height: 30px;
+  margin-left: 10px;
+}
