@@ -11,7 +11,7 @@ function App() {
       <header className="header">
         <Navigation />
         <Routes>
-          <Route path="/Home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/Signin" element={<Signin />} />
           <Route path="/Producs" element={<Products />} />
         </Routes>
