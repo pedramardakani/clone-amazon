@@ -1,11 +1,18 @@
 p {
-  margin-bottom: 2px;
+  display: block;
 }
 
 .product-card {
   margin-top: 150px;
   width: 18rem;
 }
+.price-tag {
+  margin-bottom: 3px;
+}
 .rating-stars {
   margin-bottom: 8px;
+}
+.buy-button {
+  display: flex;
+  justify-content: flex-end;
 }
