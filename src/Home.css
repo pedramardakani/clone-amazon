@@ -6,6 +6,9 @@ p {
   margin-top: 150px;
   width: 18rem;
 }
+.product-img {
+  height: 20rem;
+}
 .price-tag {
   margin-bottom: 3px;
 }
